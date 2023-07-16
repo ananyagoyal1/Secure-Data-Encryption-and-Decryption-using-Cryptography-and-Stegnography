@@ -1,0 +1,52 @@
+<html>
+<head>
+  <title>Home</title>
+  <link href="{{ url_for('static',filename = 'css/bulma.css') }}" rel="stylesheet">
+  <style>
+    .tile {
+      text-align: center;
+    }
+    
+    .image-container {
+      margin: 50px 0;
+    }
+    
+    .image-container img {
+      display: block;
+      margin: 0 auto;
+    }
+    
+    .title-text {
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    .white-text {
+      color: white;
+    }
+  </style>
+</head>
+<body background="{{ url_for('static',filename = 'images/image15.jpg') }}">
+  <h1 class="title is-1 has-text-centered has-text-white">Welcome To</h1>
+  <h1 class="title is-1 has-text-centered has-text-white">Secure Encryption And Decryption Using Crypto And Stego</h1>
+  
+  <div class="tile is-ancestor">
+    <div class="tile is-6">
+      <div class="image-container">
+        <a href="Encryption">
+          <img src="{{ url_for('static',filename = 'images/encryptlogo.jpeg') }}">
+        </a>
+      </div>
+      <p class="title-text is-3 white-text">Sender Side</p>
+    </div>
+    <div class="tile is-6">
+      <div class="image-container">
+        <a href="Decryption">
+          <img src="{{ url_for('static',filename = 'images/decryptlogo.jpg') }}">
+        </a>
+      </div>
+      <p class="title-text is-3 white-text">Receiver Side</p>
+    </div>
+  </div>
+</body>
+</html>

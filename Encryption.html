@@ -1,0 +1,47 @@
+<html>
+ <head>
+ <title>Encryption</title>
+ <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename = 'css/bulma.css') }}">
+ </head>
+ <body style="padding-left: 20%; padding-top: 5%;padding-right: 20%" background="{{ 
+url_for('static',filename = 'images/encrypt_body.jpg') }}">
+ <div style="padding-left: 20%; padding-top: 10%;padding-right: 20%; padding-bottom: 20">
+ <img src="">
+ <h1 class="title is-2 has-text-white">Sender Side</h1>
+ <form method="post" enctype="multipart/form-data">
+ <div class="field">
+ <label class="label has-text-white">Source File</label>
+ <div class="control">
+ <input class="input" type="file" name="source_file" required>
+ </div>
+ </div>
+ <div class="field">
+ <label class="label has-text-white">Prime 1</label>
+ <div class="control">
+ <input class="input" type="text" name="prime_1" placeholder="Enter Prime no.1" required>
+ </div>
+ </div>
+ <div class="field">
+ <label class="label has-text-white">Prime 2</label>
+ <div class="control">
+ <input class="input" type="text" name="prime_2" placeholder="Enter Prime no.2" required>
+ </div>
+ </div>
+ <div class="field">
+ <label class="label has-text-white">Cover File</label>
+ <div class="control">
+ <input class="input" type="file" name="cover_file" required>
+ </div>
+ </div>
+ <div class="field">
+ <label class="label has-text-white">New Image Name</label>
+ <div class="control">
+ <input class="input" type="text" name="new_name" placeholder="Enter New Name for saving Image" required>
+ </div>
+ </div>
+ <input type="submit" name="" class="button" value="Submit">
+ </form>
+ </div>
+ </body>
+</html>
+
